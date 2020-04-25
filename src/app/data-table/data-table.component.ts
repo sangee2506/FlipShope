@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { DataService } from '../data.service';
 import { companyData } from '../companyData';
-import { MatSort,MatSortable } from '@angular/material/sort';
+import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 
 
@@ -12,11 +12,7 @@ import { MatTableDataSource } from '@angular/material/table';
   styleUrls: ['./data-table.component.css']
 })
 export class DataTableComponent implements OnInit {
-
-  tableData:companyData[]
-
-  
-  displayedColumns: string[] = ['name', 'email', 'age', 'medicine','options'];
+ displayedColumns: string[] = ['name', 'email', 'age', 'medicine','options'];
   public dataSource = new MatTableDataSource<companyData>();
 
   @ViewChild(MatSort, {static: true}) sort: MatSort;

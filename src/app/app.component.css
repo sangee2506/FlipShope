@@ -4,6 +4,12 @@ h1{
     text-align: center;
     margin-top:20px;
 }
+h2{
+    color: blueviolet;
+    margin-left: auto;
+    text-align: center;
+    margin-top:0px
+}
  hr {
     margin: 0 -30px 20px;
 }
