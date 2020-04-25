@@ -1,0 +1,16 @@
+h1{
+    color: rgb(63, 161, 63);
+    margin-left: auto;
+    text-align: center;
+    margin-top:20px;
+}
+ hr {
+    margin: 0 -30px 20px;
+}
+.container-fluid
+{
+    margin-top: 10px;
+}
+.table-data{
+    margin-top: 30px;
+}

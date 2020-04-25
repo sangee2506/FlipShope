@@ -1,0 +1,61 @@
+<div class="container-fluid">
+    <div class="data-form">
+        <form  #dataForm="ngForm" (ngSubmit)="onSubmit(dataForm)">
+            <h2> Form </h2>
+           <p>* All are Required fields</p>
+            <hr>
+            
+               <div class="form-group">
+                    <label class="sr-only">Full Name</label>
+                    <input type="text"  placeholder="Full Name"  class="form-control" required  
+                     [(ngModel)]="dataservice.currentData.name" name="name">
+                 </div>
+
+                 
+    
+                <div class="form-group">
+                    <label class="sr-only" for="Useremail">Email</label>
+                    <input type="email"  placeholder="Email"   required class="form-control" email #userEmail="ngModel"
+                    [(ngModel)]="dataservice.currentData.email" name="email" >
+                    <p *ngIf="userEmail.errors?.email" class="errors"> 
+                        Email not valid.
+                    </p> 
+                        
+             </div>
+                   
+          
+                 <div class="form-group">
+                     <label class="sr-only" >Date of Birth</label>
+                     <input type="date" placeholder="Date of Birth" required class="form-control"  
+                      [(ngModel)]="dataservice.currentData.age"  name="age">
+                 </div>    
+                 
+             
+                                      
+                  <div class="form-group">
+                    <select class="form-control"  required [(ngModel)]="dataservice.currentData.medicine" name="medicine" >
+                        <option value="" disabled selected>Select Medicine</option>
+                        <option *ngFor="let options of medicine" [value]="options.value">
+                           {{options.display}}</option>
+                           </select>
+                  </div>
+                                         
+                             
+                                
+                               
+                   <div class="form-group">
+                         <select class="form-control"  required [(ngModel)]="dataservice.currentData.country" name="country" >
+                             <option value="" disabled selected>Select Country</option>
+                             <option *ngFor="let options of country" [value]="options.value">
+                                {{options.display}}</option>
+                        </select>   
+                        </div>             
+                
+                              
+             <div class="form-group">
+                <button type="submit" class="btn btn-success btn-lg" (click)="submit(dataservice.currentData)" [disabled]=!dataForm.valid>Submit</button>
+                <button type="reset" class="btn btn-info btn-lg" (click)="reset(dataForm)">Reset</button>
+            </div>
+    </form>
+    </div>
+    </div>

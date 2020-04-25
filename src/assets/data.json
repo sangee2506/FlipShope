@@ -1,0 +1,28 @@
+{
+  "companyData": [
+    {
+      "id": "3P9Ive2",
+      "name": "sonali sharma",
+      "email": "sonalie@gmail.com",
+      "medicine": "Ecosprin",
+      "age": "1997-03-01",
+      "country": "India"
+    },
+    {
+      "id": "sdKxO7r",
+      "name": "sangeeta sharma",
+      "email": "ssangeeta2511@gmail.com",
+      "medicine": "chemistry",
+      "age": "1998-11-25",
+      "country": "India"
+    },
+    {
+      "id": "4Ycsh8m",
+      "name": "Archana Das",
+      "email": "sam@gmail.com",
+      "medicine": "Ecosprin",
+      "age": "1997-02-05",
+      "country": "India"
+    }
+  ]
+}
